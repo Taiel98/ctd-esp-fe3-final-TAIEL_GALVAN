@@ -5,7 +5,7 @@ import { ContextGlobal, theme} from './utils/global.context'
 //Este componente debera ser estilado como "dark" o "light" dependiendo del theme del Context
 
 const Navbar = () => {
-  const {theme, handleChageTheme} = useContext(ContextGlobal)
+const {theme, handleChageTheme} = useContext(ContextGlobal)
   return (
     <nav>
       {/* Aqui deberan agregar los liks correspondientes a las rutas definidas */}

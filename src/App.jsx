@@ -8,11 +8,11 @@ function App() {
   return (
     
       <div className="App">
-         <ContextProvider>
+        <ContextProvider>
           <Navbar/>
           <Outlet/>
           <Footer/>
-          </ContextProvider>
+        </ContextProvider>
       </div>
       
   );

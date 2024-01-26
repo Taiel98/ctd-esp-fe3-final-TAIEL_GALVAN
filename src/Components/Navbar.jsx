@@ -15,7 +15,7 @@ const {theme, handleChageTheme} = useContext(ContextGlobal)
       <Link to="./Routes/Contact">Contact</Link>
       {/* Deberan implementar ademas la logica para cambiar de Theme con el button */}
       <button
-        onClick={handleChageTheme}
+onClick={handleChageTheme}
         style={{background: theme.background, color:theme.font}}
       >Change theme</button>
     </nav>

@@ -28,7 +28,7 @@ export const ContextProvider = ({ children }) => {
     <ContextGlobal.Provider value={{providerValue}}>
       <div style={{background: theme.background, color: theme.font}}>
       {children}
-      </div>
+     </div>
     </ContextGlobal.Provider>
   );
 };

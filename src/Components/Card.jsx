@@ -1,12 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Detail from "../Routes/Detail";
+
 
 
 const Card = ({ name, username, id }) => {
+  const [favo, setFavo] = useState('');
 
   const addFav = ()=>{
+    const fav  = {
+      'name': name,
+      'username': username,
+      'id': id
+    };
+    setFavo = fav;
     // Aqui iria la logica para agregar la Card en el localStorage
+  }
+
+  const saveData = () => {
+    localStorage.setItem('favorito', favo)
   }
 
   return (
